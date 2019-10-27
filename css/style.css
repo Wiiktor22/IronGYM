@@ -44,6 +44,7 @@ nav {
     width: 100%;
     height: 100vh;
     background-color: #3a99f2;
+    z-index: 5;
 }
 
 nav.on {
@@ -110,7 +111,7 @@ nav a {
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1025px){
     h1.logo {
         font-size: 5rem;
     }
@@ -125,7 +126,6 @@ nav a {
         left: 30vw;
         height: 15vh;
         line-height: 15vh;
-        /* right: 0; */
         width: auto;
     } 
 
@@ -172,6 +172,172 @@ nav a {
 
 @media (min-width: 1700px) {
     nav {
-        left: 35vw;
+        left: 32vw;
+    }
+
+    h1.logo {
+        margin-left: 0;
+    }
+}
+
+/* BANNER */
+
+.banner1, .banner2 {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    font-family: 'Staatliches', cursive;
+    opacity: 0;
+}
+
+.banner1 {
+    background: url(../img/banner1.jpeg);
+    background-size: cover;
+    background-position: 40% center;
+    background-repeat: no-repeat;
+    animation: animation_banner 8s 0s linear infinite;
+}
+
+.banner2 {
+    background: url(../img/banner2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: animation_banner 8s 4s linear infinite;
+}
+
+.banner1 h2, .banner2 h2, .banner1 h3, .banner2 h3 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.banner1 h2, .banner2 h2 {
+    color: #3a99f2;
+    bottom: 10vh;
+}
+
+.banner1 h2, .banner1 h3 {
+    left: 5vw;
+}
+
+.banner2 h2, .banner2 h3 {
+    right: 5vw;
+}
+
+.banner1 h3, .banner2 h3 {
+    color: #a2a5a8;
+    bottom: 5vh;
+}
+
+@keyframes animation_banner {
+    0% {
+        opacity: 0;
+    }
+
+    3% {
+        opacity: 1;
+    }
+
+    47% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (orientation: landscape) {
+    .banner1, .banner2 {
+        height: 85vh;
+        top: 15vh;
+    }
+
+    .banner1 {
+        background-position: center 20%;
+    }
+
+    .banner1 h2, .banner2 h2, .banner1 h3, .banner2 h3 {
+        font-size: 3rem;
+    }
+
+    .banner1 h2, .banner2 h2 {
+        bottom: 14vh;
+    }
+}
+
+@media (min-width: 360px) {
+    .banner1 h2, .banner2 h2, .banner1 h3, .banner2 h3 {
+        font-size: 3rem;
+    }
+    
+    .banner1 h2, .banner2 h2 {
+        bottom: 9.5vh;
+    }
+}
+
+@media (min-width: 360px) and (orientation: landscape) {
+    .banner1 h2, .banner2 h2 {
+        bottom: 13vh;
+    }
+
+    .banner2 {
+        background-position: center 60%;
+    }
+}
+
+@media (min-width: 375px) and (min-height: 811px){
+    /* iPhone X */
+    .banner1 h2, .banner2 h2 {
+        bottom: 9vh;
+    }
+
+    .banner1 {
+        background-position: 37% center;
+    }
+}
+
+@media (min-width: 375px) and (min-height: 811px) and (orientation: landscape) {
+    .banner2 {
+        background-position: center;
+    }
+}
+
+@media (min-width: 410px) {
+    .banner1 h2, .banner2 h2, .banner1 h3, .banner2 h3 {
+        font-size: 3.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner1 h2, .banner2 h2, .banner1 h3, .banner2 h3 {
+        font-size: 4.6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner1 h2, .banner2 h2, .banner1 h3, .banner2 h3 {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 1240px) {
+    .banner1 h2, .banner2 h2 {
+        bottom: 10.5vh;
+    }
+}
+
+@media (min-width: 1410px) {
+    .banner1, .banner2 {
+        background-position: center 20%;
+    }
+}
+
+@media (min-width: 1700px) {
+    .banner1, .banner2 {
+        background-position: center 30%;
     }
 }
