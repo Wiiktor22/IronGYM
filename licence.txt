@@ -1,0 +1,5 @@
+In this project, I used a icon from FontAwesome.
+Here is a link to license file.
+https://fontawesome.com/license
+
+I also used a "Swiper" directly from https://swiperjs.com
