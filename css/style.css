@@ -689,3 +689,213 @@ nav a {
         width: 25vw;
     }
 }
+
+/* SECTION CONSULTANT */
+section.consultant {
+    background-color: #3a99f2;
+    height: 60vh;
+}
+
+div.consultant{
+    background-color: #3a99f2;
+    color: white;
+    padding: 5vh;
+    font-family: 'Staatliches', cursive;
+}
+
+.consultant_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.consultant h6 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.consultant button {
+    margin: 4vh;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 2.2rem;
+}
+
+.consultant button:hover {
+    background-color: white;
+    color: #3a99f2;
+    cursor: pointer;
+}
+
+.consultant p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.consultant_photo {
+    display: none;
+}
+
+@media (orientation: landscape) {
+    
+    .consultant h6 {
+        font-size: 2.5rem;
+    }
+
+    .consultant button {
+        font-size: 2rem;
+        margin: 3vh;
+    }
+
+    .consultant p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+    .consultant h6 {
+        font-size: 3.5rem;
+    }
+
+    .consultant button {
+        font-size: 2.6rem;
+        margin: 5vh;
+    }
+
+    .consultant p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-height: 360px) and (orientation: landscape) {
+    .consultant button {
+        font-size: 2.4rem;
+    }
+
+    .consultant p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+    section.consultant {
+        height: 55vh;
+    }
+    
+    .consultant h6 {
+        font-size: 3.6rem;
+    }
+
+    .consultant button {
+        font-size: 2.8rem;
+    }
+
+    .consultant p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 410px) {
+    .consultant {
+        height: 45vh;
+    }
+}
+
+@media (min-width: 410px) and (orientation: portrait) {
+    section.consultant {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 730px) and (orientation: landscape) {
+    section.consultant {
+        height: 55vh;
+    }
+
+    .consultant button {
+        margin: 7vh 0;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    section.consultant {
+        height: 40vh;
+    }
+
+    .consultant h6 {
+        font-size: 4.2rem;
+    }
+
+    .consultant button {
+        font-size: 3.2rem;
+        padding: 15px 30px;
+    }
+
+    .consultant p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    section.consultant {
+        height: 25vh;
+    }
+    
+    div.consultant {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        padding: 5vh 10vh;
+    }
+
+    .consultant_info {
+        width: 80%;
+    }
+
+    .consultant h6 {
+        display: block;
+        text-align: left;
+        width: 20%
+    }
+
+    .consultant button {
+        font-size: 2.5rem;
+        padding: 10px 20px;
+        margin: 0 0 3vh;
+    }
+
+    .consultant p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+    section.consultant {
+        height: 20vh;
+    }
+
+    div.consultant {
+        padding: 5vh 5vh;
+    }
+
+    .consultant h6 {
+        width: 30%;
+    }
+
+    .consultant_info {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1400px) {
+    section.consultant {
+        height: 20vh;
+    }
+}
