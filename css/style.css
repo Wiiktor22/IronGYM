@@ -899,3 +899,197 @@ div.consultant{
         height: 20vh;
     }
 }
+
+/* SECTION BEST TRAINERS */
+.section_trainers {
+    margin-top: 2vh;
+}
+
+.about_trainers, .trainers, .trainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about_trainers {
+    padding: 0 5vh;
+}
+
+.about_trainers h3 {
+    font-size: 3rem;
+    font-family: 'Staatliches', cursive;
+    color: #3a99f2;
+    letter-spacing: 1px;
+    padding: 5vh 0;
+}
+
+.trainer_description {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.trainer_photo {
+    position: relative;
+    border: 1.5px #3a99f2 solid;
+}
+
+.trainer_photo h5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 8vh;
+    line-height: 8vh;
+    background-color: rgba(58, 153, 242,.85);
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color:white;
+}
+
+.trainer_photo img {
+    height: 60vh;
+    width: 100%;
+}
+
+.trainer_description {
+    padding: 3vh;
+}
+
+@media (orientation: landscape) {
+    .trainer_photo {
+        width: 50%;
+    }
+    
+    .trainer_photo img {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .trainer_description {
+        width: 80%;
+    }
+
+    .trainer_description p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+    .trainer_photo h5 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 568px) {
+    .trainer_photo {
+        width: 45%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    .trainer_photo {
+        width: 40%;
+    }
+}
+
+@media (min-width: 410px) and (orientation: portrait) {
+    .trainer_description {
+        font-size: 1.3rem;
+    }
+
+    .trainer_photo h5 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (min-height: 812px) and (orientation: portrait) {
+    .trainer_photo img {
+        height: 50vh;
+    }
+
+    .about_trainers h3 {
+        padding: 3vh 0;
+    }
+}
+
+@media (min-height: 1024px) and (min-width: 768px) and (orientation: portrait) {
+    .trainer_photo img {
+        height: 45vh;
+    }
+
+    .trainer_photo {
+        width: 55%;
+    }
+
+    .trainer_photo h5 {
+        height: 6vh;
+        line-height: 6vh;
+    }
+
+    .trainer_description p {
+        text-align: center;
+    }
+
+    .about_trainers h3 {
+        margin: 4vh 0 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .trainers {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about_trainers h3 {
+        font-size: 4rem;
+    }
+
+    .trainer {
+        width: 31%;
+    }
+
+    .trainer_photo {
+        width: 100%;
+    }
+
+    .trainer_photo img {
+        height: 55vh;
+    }
+
+    .trainer_photo h5 {
+        height: 5vh;
+        line-height: 5vh;
+        font-size: 2.4rem;
+    }
+
+    .trainer_description {
+        width: 90%;
+        padding: 3vh 0;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+    .trainer_photo img {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 1366px) {
+    .trainer {
+        width: 30%;
+    }
+
+    .trainer_photo img {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 1700px) {
+    .trainer_photo img {
+        height: 50vh;
+    }
+}
