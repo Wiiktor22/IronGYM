@@ -1338,3 +1338,47 @@ input {
         font-size: 3.4rem;
     }
 }
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #32383d;
+    color: #3a99f2;
+    font-size: 1.4rem;
+}
+
+footer p {
+    text-transform: uppercase;
+}
+
+footer a {
+    text-decoration: none;
+    color: #3a99f2;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+@media (orientation: landscape) {
+    footer {
+        height: 15vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        height: 10vh;
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    footer {
+        height: 8vh;
+    }
+}
