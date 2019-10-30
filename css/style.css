@@ -957,6 +957,10 @@ div.consultant{
     padding: 3vh;
 }
 
+.trainer_description p {
+    text-align: center;
+}
+
 @media (orientation: landscape) {
     .trainer_photo {
         width: 50%;
@@ -969,10 +973,6 @@ div.consultant{
 
     .trainer_description {
         width: 80%;
-    }
-
-    .trainer_description p {
-        text-align: center;
     }
 }
 
@@ -1026,10 +1026,6 @@ div.consultant{
     .trainer_photo h5 {
         height: 6vh;
         line-height: 6vh;
-    }
-
-    .trainer_description p {
-        text-align: center;
     }
 
     .about_trainers h3 {
@@ -1091,5 +1087,254 @@ div.consultant{
 @media (min-width: 1700px) {
     .trainer_photo img {
         height: 50vh;
+    }
+}
+
+/* SECTION CONTACT */
+.section_contact {
+    background-color: #3a99f2;
+    color: white;
+}
+
+.contact, .message, .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact {
+    padding: 5vh;
+}
+
+.message {
+    padding-bottom: 5vh;
+}
+
+.info {
+    width: 100%;
+}
+
+.message h6 {
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+}
+
+.message p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 3vh 0;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 1vh;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    margin-bottom: 2vh;
+}
+
+input {
+    height: 6vh;
+}
+
+.message button {
+    width: 70%;
+    height: 6vh;
+    line-height: 6vh;
+    font-size: 1.8rem;
+    background-color: #3a99f2;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    border: 1px solid white;
+}
+
+.message button:hover {
+    background-color: white;
+    color: #3a99f2;
+}
+
+.info .logo {
+    margin: 0;
+    font-size: 4rem;
+    color: #32383d;
+    padding-bottom: 3vh;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #32383d;
+    font-size: 2rem;
+    width: 80%;
+}
+
+.social:hover {
+    color: #a2a5a8;
+}
+
+.info p {
+    display: none;
+}
+
+@media (orientation: landscape) {
+    .message h6 {
+        font-size: 3.4rem;
+    }
+    
+    .message p {
+        padding: 4vh 0;
+    }
+    
+    input, textarea {
+        width: 75%;
+        padding: 2vh;
+        margin-bottom: 4vh;
+    }
+
+    input {
+        height: 8vh;
+    }
+
+    textarea {
+        height: 40vh;
+    }
+
+    .message button {
+        width: 50%;
+        height: 9vh;
+        line-height: 9vh;
+    }
+
+    .info .logo {
+        font-size: 4.4rem;
+    }
+
+    .socials {
+        width: 60%;
+    }
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+    .message h6 {
+        font-size: 3.6rem;
+    }
+
+    .info .logo {
+        font-size: 4.2rem;
+    }
+}
+
+@media (min-width: 375px) {
+    .message button {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 410px) {
+    .message h6 {
+        font-size: 3.8rem;
+    }
+
+    .message p {
+        font-size: 1.3rem;
+    }
+
+    .info .logo {
+        font-size: 4.4rem;
+    }
+
+    input, textarea {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .message {
+        padding-bottom: 3vh;
+    }
+    
+    .message h6 {
+        font-size: 4.2rem;
+    }
+
+    .message p {
+        font-size: 1.5rem;
+        padding: 2vh 0;
+    }
+
+    input {
+        height: 5vh;
+        line-height: 5vh;
+    }
+
+    .info .logo {
+        font-size: 4.7rem;
+    }
+
+    .message button {
+        width: 60%;
+        font-size: 2.6rem;
+    }
+
+    .socials {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact {
+        flex-direction: row;
+    }
+
+    .message, .info {
+        width: 50%;
+        padding: 0;
+    }
+
+    .message p {
+        font-size: 1.4rem;
+        padding: 2vh 0;
+    }
+
+    input {
+        height: 6vh;
+        line-height: 6vh;
+    }
+
+    input, textarea {
+        margin-bottom: 2vh;
+    }
+
+    textarea {
+        height: 25vh;
+    }
+
+    .message button {
+        height: 6vh;
+        line-height: 6vh;
+    }
+
+    .info p {
+        margin-top: 5vh;
+        display: block;
+        width: 90%;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .info .logo {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 1366px) {
+    .info p {
+        width: 80%;
+    }
+
+    .social {
+        font-size: 3.4rem;
     }
 }
