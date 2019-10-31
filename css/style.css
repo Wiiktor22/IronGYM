@@ -49,6 +49,7 @@ nav {
     height: 100vh;
     background-color: #3a99f2;
     z-index: 5;
+    font-family: 'Staatliches', cursive;
 }
 
 nav.on {
@@ -99,6 +100,12 @@ nav a {
     }
 }
 
+@media (min-width: 375px) and (min-height: 812px) {
+    nav a{
+        font-size: 3.6rem;
+    }
+}
+
 @media (min-width: 410px){
     h1.logo, .fa-times {
         font-size: 3.5rem;
@@ -131,6 +138,7 @@ nav a {
         height: 15vh;
         line-height: 15vh;
         width: auto;
+        font-family: 'Open Sans', sans-serif;
     } 
 
     nav ul {
@@ -301,7 +309,7 @@ nav a {
 @media (min-width: 375px) and (min-height: 811px){
     /* iPhone X */
     .banner1 h2, .banner2 h2 {
-        bottom: 9vh;
+        bottom: 8.25vh;
     }
 
     .banner1 {
@@ -369,7 +377,6 @@ nav a {
     font-size: 3rem;
     color: #3a99f2;
     text-align: center;
-    letter-spacing: 1px;
 }
 .service {
     text-align: center
@@ -451,6 +458,10 @@ nav a {
     .service h4 {
         font-size: 3rem;
         padding: 1vh 0;
+    }
+
+    .section_services h3 {
+        letter-spacing: 1px;
     }
 }
 
@@ -566,6 +577,17 @@ nav a {
 
     .swiper-slide, .training_content li {
         font-size: 2.6rem;
+    }
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+    .swiper-slide {
+        height: 55vh;
+        width: 75vw;
+    }
+
+    .swiper-container {
+        height: 80vh;
     }
 }
 
@@ -712,7 +734,6 @@ div.consultant{
 .consultant h6 {
     font-size: 3rem;
     text-align: center;
-    letter-spacing: 1px;
 }
 
 .consultant button {
@@ -862,7 +883,8 @@ div.consultant{
     .consultant h6 {
         display: block;
         text-align: left;
-        width: 20%
+        width: 20%;
+        letter-spacing: 1px;
     }
 
     .consultant button {
@@ -1381,4 +1403,18 @@ footer a:hover {
     footer {
         height: 9vh;
     }
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 1vh;
+    right: 2vw;
+    height: 5vh;
+    width: 5vh;
+    color: #3a99f2;
+    background-color: rgba(50, 56, 61, .8);
+    border: none;
+    border-radius: 5px;
+    z-index: 3;
+    cursor: pointer;
 }
