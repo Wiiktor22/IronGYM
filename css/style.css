@@ -306,7 +306,7 @@ nav a {
     }
 }
 
-@media (min-width: 375px) and (min-height: 811px){
+@media (min-width: 374px) and (min-height: 750px){
     /* iPhone X */
     .banner1 h2, .banner2 h2 {
         bottom: 8.25vh;
@@ -1407,8 +1407,8 @@ footer a:hover {
 
 #topBtn {
     position: fixed;
-    bottom: 1vh;
-    right: 2vw;
+    bottom: 2vh;
+    right: 5vw;
     height: 5vh;
     width: 5vh;
     color: #3a99f2;
